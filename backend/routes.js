@@ -1,10 +1,9 @@
 const router = require("express").Router();
+const authController = require("./controllers/auth-controller");
 
-router.post('/api/send-otp', () => {
-    
-})
-
+router.post('/api/send-otp', authController.sendOTP);
 
 
 
-module.export = router
+
+module.exports = router
