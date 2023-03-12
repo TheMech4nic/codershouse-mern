@@ -2,5 +2,16 @@ POST http://localhost:8081/api/send-otp HTTP/1.1
 Content-Type: application/json
 
 {
-    "phone": "+6263888051"
+    "phone": "+916263888051"
+}
+
+###
+
+POST http://localhost:8081/api/verify-otp HTTP/1.1
+Content-Type: application/json
+
+{
+    "phone": "+916263888051",
+    "otp" : 3793,
+    "hash" : "fbe9f799dc231973eddcaa3f5f656fdb9c8e4a8c36d153f02fc0a5f46a044e8a.1678610559102"
 }
